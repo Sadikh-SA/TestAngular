@@ -1,0 +1,17 @@
+<table id="user" border="1" >
+  <tr >
+    <th>NINEA</th>
+    <th>LOCALISATION</th>
+    <th>DOMAINE D'ACTIVITÉ</th>
+    <th>DATE DE CRÉATION</th>
+    <th>STATUT</th>
+  </tr>
+
+  <tr *ngFor="let partenaire of partenaire">
+    <td>{{ partenaire.ninea }}</td>
+    <td>{{ partenaire.localisation }}</td>
+    <td>{{ partenaire.domaineActivite }}</td>
+    <td>{{ partenaire.dateCreation | date: 'longDate' }}</td>
+    <td>{{ partenaire.statut }}</td>
+  </tr>
+</table>
